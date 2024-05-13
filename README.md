@@ -16,3 +16,4 @@ Documentation and README files providing an overview of the project structure an
 Contributing:
 We welcome contributions from the open-source community to further refine and expand upon our conceptual framework. Whether you're a seasoned developer or a newcomer to the world of programming, your insights are valuable to us.
 
+I have Used my own defines String class to use this code you have to add C++ built in String and have to change code a little bit. 
