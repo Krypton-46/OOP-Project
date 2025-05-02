@@ -2,18 +2,16 @@
 #define CREATURE_H
 #include<iostream>
 #include<ctime>
-#include"C:\Users\dell\source\repos\\class of string\String.h"
+#include<string>
 using namespace std;
 class Creature
 {
 	int strength;
 	int hitpoints;
-	String specieName;
-protected:
-	String getSpecieName()const;
+	string specieName;
 public:
-	Creature();
-	Creature(String name, int newStrength, int newHit);
+	string getSpecieName()const;
+	Creature(string name, int newStrength, int newHit);
 	virtual int getDamage()const;
 	int getStrength()const;
 	int getHitPoints()const;
