@@ -1,8 +1,7 @@
 #include"Elf.h"
 int Elf::getDamage()const
 {
-	srand(time(0));
-	int damage= Creature::getDamage();
+	int damage = (rand() % 10 + getStrength()) + 1;
 	int randomizer = rand() % 100;
 	if (randomizer < 10) // 10% chance to double damage	
 		damage = damage * 2;

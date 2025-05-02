@@ -1,9 +1,9 @@
 #include"Game.h"
 int main()
 {
-	Game game();
-	game.input();
-	game.playGame();
+	Game g;
+	g.input();
+	g.playGame();
 
 	return 0;
 }

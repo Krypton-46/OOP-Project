@@ -4,7 +4,7 @@
 #include"Demon.h"
 #include"Balrog.h"
 #include"CyberDemon.h"
-
+#include<ctime>
 Game::Game()
 {
 	player1 = nullptr;
@@ -23,19 +23,19 @@ void Game::input()
 	switch (name1)
 	{
 	case 1:
-		player1 = new Human();
+		player1 = new Human("HUMAN",40,100);
 		break;
 	case 2:
-		player1 = new Balrog();
+		player1 = new Balrog("BALROG",50,120);
 		break;
 	case 3:
-		player1 = new Elf();
+		player1 = new Elf("ELF",45,170);
 		break;
 	case 4:
-		player1 = new Cyberdemon();
+		player1 = new CyberDemon("CYBERDOMON",55,130);
 		break;
 	case 5:
-		player1 = new Demon();
+		player1 = new Demon("DEMON",35,100);
 		break;
 	default:
 		cout << "Invalid input! Please try again." << '\n';
@@ -45,19 +45,19 @@ void Game::input()
 	switch (name2)
 	{
 	case 1:
-		player2 = new Human();
+		player2 = new Human("HUMAN", 40, 100);
 		break;
 	case 2:
-		player2 = new Balrog();
+		player2 = new Balrog("BALROG", 50, 120);
 		break;
 	case 3:
-		player2 = new Elf();
+		player2 = new Elf("ELF", 45, 170);
 		break;
 	case 4:
-		player2 = new Cyberdemon();
+		player2 = new CyberDemon("CYBERDOMON", 55, 130);
 		break;
 	case 5:
-		player2 = new Demon();
+		player2 = new Demon("DEMON", 35, 100);
 		break;
 	default:
 		cout << "Invalid input! Please try again." << '\n';
@@ -77,12 +77,12 @@ Game::~Game()
 }
 void Game::playGame()
 {
-	player1->setStrength(100);
-	player2->setStrength(100);
-	player1->setHitpoints(200);
-	player2->setHitpoints(200);
+	srand(time(0));
+	cout << "The battle begins!" << '\n';
 	while (player1->getHitPoints() > 0 && player2->getHitPoints() > 0)
 	{
+		cout << player1->getSpecieName() << " has " << player1->getHitPoints() << " hit points left." << '\n';
+		cout << player2->getSpecieName() << " has " << player2->getHitPoints() << " hit points left." << '\n';
 		int damage = player1->getDamage();
 		player2->setHitpoints(player2->getHitPoints() - damage);
 		if (player2->getHitPoints() <= 0)
