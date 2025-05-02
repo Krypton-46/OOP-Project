@@ -1,4 +1,15 @@
 #include"Game.h"
+#include"Human.h"
+#include"Elf.h"
+#include"Demon.h"
+#include"Balrog.h"
+#include"CyberDemon.h"
+
+Game::Game()
+{
+	player1 = nullptr;
+	player2 = nullptr;
+}
 void Game::input()
 {
 	cout << "Welcome to the game!" << '\n';

@@ -10,6 +10,7 @@ class Creature
 	int hitpoints;
 	string specieName;
 public:
+	Creature();
 	string getSpecieName()const;
 	Creature(string name, int newStrength, int newHit);
 	virtual int getDamage()const;

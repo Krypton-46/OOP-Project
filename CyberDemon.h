@@ -4,6 +4,6 @@
 class CyberDemon :public Demon
 {
 public:
-	using Demon::Demon;
+	int getDamage()const;
 };
 #endif // !CYBER_DEMON_H

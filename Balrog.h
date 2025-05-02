@@ -4,7 +4,6 @@
 class Balrog :public Demon
 {
 public:
-	using Demon::Demon;
 	virtual int getDamage()const;
 };
 #endif // !BALROG_H

@@ -1,4 +1,6 @@
 #include"Creature.h"
+Creature::Creature()
+{ }
 Creature::Creature(string name, int newStrength, int newHit)
 {
 	specieName = name;
@@ -24,7 +26,7 @@ void Creature::setHitpoints(const int newHit)
 int Creature::getDamage()const
 {
 	srand(time(0));
-	int damage  = (rand() & getStrength()) + 1;
+	int damage  = (rand()%10 + getStrength()) + 1;
 	cout << '\n' << getSpecieName() << " attacks for " << damage << " points!" << '\n';
 	return damage;
 }

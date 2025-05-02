@@ -7,6 +7,7 @@ class Game
 	Creature* player2;
 	void printSpecies()const;
 public:
+	Game();
 	void input();
 	Game(Creature*, Creature*);
 	void playGame();
