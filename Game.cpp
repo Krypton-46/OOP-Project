@@ -23,7 +23,7 @@ void Game::input()
 	switch (name1)
 	{
 	case 1:
-		player1 = new Human("HUMAN",40,100);
+		player1 = new Human("HUMAN",40,200);
 		break;
 	case 2:
 		player1 = new Balrog("BALROG",50,120);
@@ -81,7 +81,7 @@ void Game::playGame()
 	cout << "The battle begins!" << '\n';
 	while (player1->getHitPoints() > 0 && player2->getHitPoints() > 0)
 	{
-		cout << player1->getSpecieName() << " has " << player1->getHitPoints() << " hit points left." << '\n';
+		cout <<'\n'<< player1->getSpecieName() << " has " << player1->getHitPoints() << " hit points left." << '\n';
 		cout << player2->getSpecieName() << " has " << player2->getHitPoints() << " hit points left." << '\n';
 		int damage = player1->getDamage();
 		player2->setHitpoints(player2->getHitPoints() - damage);
