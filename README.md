@@ -11,14 +11,14 @@
     CyberDemon.h / CyberDemon.cpp: Extends Demon to create a CyberDemon with additional features.
 
     Balrog.h / Balrog.cpp: Another subclass of Demon, the Balrog may have unique attack patterns or speed.
-    timo.rinne.ws
+  
 
     Game.h / Game.cpp: Manages the game flow, including initializing creatures and handling battles.
 
     main.cpp: The main function that sets up and runs the game.
 
     OOP PROJECT.sln: Visual Studio solution file for the project.
-    GitHub+4GitHub+4GitHub+4
+   
 
     OOP PROJECT.vcxproj / OOP PROJECT.vcxproj.filters: Project configuration files for building the application.
     GitHub
@@ -32,7 +32,7 @@
     Building the Project:
 
         Open OOP PROJECT.sln in Visual Studio.
-        Stack Overflow+1Livreur de Soleil+1
+    
 
         Build the solution using Build > Build Solution or by pressing Ctrl + Shift + B.
 
@@ -53,4 +53,4 @@
 
 📄 License
 
-This project is intended for educational purposes. Please refer to the repository for licensing information.
+This project is intended for educational purposes.
